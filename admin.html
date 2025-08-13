@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Loan Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Loan Repayment Form</h1>
+<p>Enter details to generate customer payment link</p>
+
+<input type="text" id="product" placeholder="Loan Product" required>
+<input type="text" id="name" placeholder="Customer Name" required>
+<input type="text" id="order" placeholder="Order No" required>
+<input type="text" id="phone" placeholder="Phone No" required>
+<input type="number" id="amount" placeholder="Repayment Amount" required>
+<input type="text" id="upi" placeholder="UPI ID" required>
+
+<button onclick="saveData()">Generate Link</button>
+
+<div id="generatedLink" style="margin-top:20px;"></div>
+</body>
+</html>

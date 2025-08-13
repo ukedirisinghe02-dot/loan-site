@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Repayment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadCustomerPage()">
+
+<h1>Loan Repayment</h1>
+
+<div id="details" class="details-box"></div>
+
+<div id="upiPage" style="display:none;" class="details-box">
+    <p><b>UPI ID:</b> <span id="upiID"></span> 
+       <button class="copy-btn" onclick="copyUPI()">Copy</button></p>
+    <p><b>Amount:</b> <span id="amount"></span></p>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Paytm_logo.png" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/PhonePe-Logo.svg" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Pay_Logo.svg" class="logo">
+    </div>
+    <input type="text" placeholder="Enter 12-digit Ref No">
+    <button onclick="submitPayment()">Submit</button>
+</div>
+
+<div id="successPage" style="display:none;" class="success">
+    Payment Successful ✅
+</div>
+
+</body>
+</html>
